@@ -121,6 +121,9 @@ public class LombokPlugin extends PluginAdapter {
     protected void addDataAnnotation(TopLevelClass topLevelClass) {
         topLevelClass.addImportedType(dataAnnotation);
         topLevelClass.addAnnotation("@Data");
+        topLevelClass.addAnnotation("@Builder");
+        topLevelClass.addAnnotation("@NoArgsConstructor");
+        topLevelClass.addAnnotation("@AllArgsConstructor");
     }
 
 }
